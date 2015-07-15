@@ -70,6 +70,8 @@ public class JiweiCrawler {
 			}
 
 			writeCsvFile("C:/曝光信息抓取结果.csv");
+			
+			System.out.println("输出CSV完毕");
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -86,6 +88,8 @@ public class JiweiCrawler {
 	 * @throws IOException
 	 */
 	private void crawlingArea(String url, String areaName, String areaId) throws ClientProtocolException, IOException {
+		System.out.println("开始抓取" + areaName + "的数据...");
+		
 		String strContent = Crawler.crawling(url);
 		crawlingOnePage(areaId, areaName, url, strContent);
 
@@ -95,6 +99,7 @@ public class JiweiCrawler {
 			if (null == strContent || strContent.length() == 0) {
 				break;
 			}
+			System.out.println("开始抓取" + areaName + "第" + (i+1) + "页的数据...");
 			crawlingOnePage(areaId, areaName, url, strContent);
 		}
 	}
@@ -149,6 +154,7 @@ public class JiweiCrawler {
 
 	public void writeCsvFile(String fileName) throws UnsupportedEncodingException, FileNotFoundException {
 
+		System.out.println("开始输出CSV文件..." + " " + fileName);
 		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(fileName, false), "GBK");
 		BufferedWriter fileWriter = new BufferedWriter(osw);
 
