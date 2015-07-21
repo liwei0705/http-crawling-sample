@@ -4,7 +4,7 @@
 
 抓取对象：http://www.ccdi.gov.cn/special/bgtzt/
 分析纬度：地域，时间，案件数量
-
+结果文件输出路径：C:/曝光信息抓取结果.csv
 
 ##依赖
 * 使用httpclient进行抓取

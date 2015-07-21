@@ -27,6 +27,7 @@ public class JiweiCrawler {
 		caseList = new ArrayList<CaseData>();
 		areaList = new ArrayList<String[]>();
 
+		//TODO 区域ID未知留空。可以手工在结果CSV文档中设置
 		areaList.add(new String[] { "http://www.ccdi.gov.cn/special/bgtzt/bj_bgt/", "北京", "" });
 		areaList.add(new String[] { "http://www.ccdi.gov.cn/special/bgtzt/tj_bgt/", "天津", "" });
 		areaList.add(new String[] { "http://www.ccdi.gov.cn/special/bgtzt/hb_bgt/", "河北", "" });
