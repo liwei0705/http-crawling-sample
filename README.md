@@ -1,10 +1,9 @@
-# http-crawling-sample
+# http-crawling-jiwei
 
-##使用httpclient进行抓取的例子
+##数据可视化课程作业 -- 抓取中纪委网站的案件曝光信息
 
-栗子1:抓取猫眼网站的JSON票房信息
-
-栗子2:抓取中纪委网站的案件曝光信息
+抓取对象：http://www.ccdi.gov.cn/special/bgtzt/
+分析纬度：地域，时间，案件数量
 
 
 ##依赖
