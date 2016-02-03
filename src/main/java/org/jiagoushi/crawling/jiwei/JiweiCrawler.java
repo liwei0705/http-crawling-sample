@@ -19,6 +19,11 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class JiweiCrawler {
+	public static void main(String[] args) {
+		new JiweiCrawler().excute();
+	}
+	
+	
 	private List<String[]> areaList;
 
 	private List<CaseData> caseList;
